@@ -1,0 +1,27 @@
+@SampleGradeSystem_HostAddress = https://localhost:44366
+
+//Check gradetype 3
+POST {{SampleGradeSystem_HostAddress}}/api/employee/3/salary/calculate?storeAmount=25000&positionAmount=15000
+Accept: application/json
+
+###
+
+
+//Check gradetype 2
+POST {{SampleGradeSystem_HostAddress}}/api/employee/2/salary/calculate?storeAmount=0&positionAmount=0
+Accept: application/json
+
+###
+
+
+//Check gradetype 1
+POST {{SampleGradeSystem_HostAddress}}/api/employee/7/salary/calculate?storeAmount=0&positionAmount=15000
+Accept: application/json
+
+###
+
+//Check gradetype 1
+POST {{SampleGradeSystem_HostAddress}}/api/employee/4/salary/calculate?storeAmount=25000&positionAmount=0
+Accept: application/json
+
+###
